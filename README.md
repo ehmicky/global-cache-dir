@@ -26,9 +26,9 @@ npm install global-cache-dir
 # See also
 
 - [`node-cachedir`](https://github.com/LinusU/node-cachedir): underlying logic
-  for this module.
+  for this module
 - [`find-cache-dir`](https://github.com/avajs/find-cache-dir): get the local
-  cache directory.
+  cache directory
 
 # Support
 
