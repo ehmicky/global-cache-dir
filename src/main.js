@@ -1,7 +1,7 @@
 import getCacheDir from 'cachedir'
 
 // Get the global cache directory
-const globalCacheDir = async function() {
+const globalCacheDir = function() {
   const cacheDir = getCacheDir()
   return cacheDir
 }
