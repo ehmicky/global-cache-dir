@@ -7,12 +7,23 @@
 
 Get the global cache directory.
 
+Also ensures the directory exists.
+
+The cache directory location is OS-specific.
+
 # Example
 
 <!-- Remove 'eslint-skip' once estree supports top-level await -->
 <!-- eslint-skip -->
 
 ```js
+const globalCacheDir = require('global-cache-dir')
+
+const cacheDir = await globalCacheDir('myapp')
+// Depending on the OS:
+//  => '/Users/ehmicky/Library/Caches/myapp'
+//  => '/home/ehmicky/.cache/myapp'
+//  => 'C:\Users\ehmicky\AppData\Local\myapp\Cache'
 ```
 
 # Install
@@ -22,6 +33,12 @@ npm install global-cache-dir
 ```
 
 # Usage
+
+## globalCacheDir(name)
+
+`name`: `{string}`<br> _Returns_: `{Promise<string>}`
+
+`name` must only use digits, letters or dashes.
 
 # See also
 
