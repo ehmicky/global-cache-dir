@@ -51,7 +51,6 @@
   },
   "dependencies": {
     "cachedir": "^2.2.0",
-    "core-js": "^3.3.2",
     "make-dir": "^3.0.0",
     "path-exists": "^4.0.0"
   },
