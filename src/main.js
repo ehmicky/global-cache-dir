@@ -1,6 +1,7 @@
+import { promises } from 'fs'
+
 import getCacheDir from 'cachedir'
 import pathExists from 'path-exists'
-import makeDir from 'make-dir'
 
 // Get the global cache directory
 const globalCacheDir = async function(name) {
@@ -16,9 +17,7 @@ const createCacheDir = async function(cacheDir) {
     return
   }
 
-  // TODO: replace with `util.promisify(fs.mkdir)(cacheDir, {recursive: true})`
-  // after dropping support for Node 8/9
-  await makeDir(cacheDir)
+  await promises.mkdir(cacheDir, { recursive: true })
 }
 
 // We do not use `export default` because Babel transpiles it in a way that

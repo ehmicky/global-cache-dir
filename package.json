@@ -51,7 +51,6 @@
   },
   "dependencies": {
     "cachedir": "^2.3.0",
-    "make-dir": "^3.0.0",
     "path-exists": "^4.0.0"
   },
   "devDependencies": {
