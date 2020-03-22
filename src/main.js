@@ -4,7 +4,7 @@ import getCacheDir from 'cachedir'
 import pathExists from 'path-exists'
 
 // Get the global cache directory
-const globalCacheDir = async function(name) {
+const globalCacheDir = async function (name) {
   const cacheDir = getCacheDir(name)
 
   await createCacheDir(cacheDir)
@@ -12,7 +12,7 @@ const globalCacheDir = async function(name) {
   return cacheDir
 }
 
-const createCacheDir = async function(cacheDir) {
+const createCacheDir = async function (cacheDir) {
   if (await pathExists(cacheDir)) {
     return
   }
