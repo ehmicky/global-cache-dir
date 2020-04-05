@@ -1,4 +1,4 @@
-import { promises } from 'fs'
+import { promises as fs } from 'fs'
 
 import getCacheDir from 'cachedir'
 import pathExists from 'path-exists'
@@ -17,7 +17,7 @@ const createCacheDir = async function (cacheDir) {
     return
   }
 
-  await promises.mkdir(cacheDir, { recursive: true })
+  await fs.mkdir(cacheDir, { recursive: true })
 }
 
 // We do not use `export default` because Babel transpiles it in a way that
