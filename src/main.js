@@ -4,11 +4,10 @@ import getCacheDir from 'cachedir'
 import pathExists from 'path-exists'
 
 // Get the global cache directory
-const globalCacheDir = async function (name) {
+// eslint-disable-next-line import/no-default-export
+export default async function globalCacheDir(name) {
   const cacheDir = getCacheDir(name)
-
   await createCacheDir(cacheDir)
-
   return cacheDir
 }
 
@@ -19,7 +18,3 @@ const createCacheDir = async function (cacheDir) {
 
   await fs.mkdir(cacheDir, { recursive: true })
 }
-
-// We do not use `export default` because Babel transpiles it in a way that
-// requires CommonJS users to `require(...).default` instead of `require(...)`.
-module.exports = globalCacheDir
