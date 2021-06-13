@@ -16,7 +16,7 @@ The cache directory location is OS-specific.
 <!-- eslint-skip -->
 
 ```js
-const globalCacheDir = require('global-cache-dir')
+import globalCacheDir from 'global-cache-dir'
 
 const cacheDir = await globalCacheDir('myapp')
 // Depending on the OS:
