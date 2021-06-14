@@ -1,8 +1,8 @@
 import test from 'ava'
+// eslint-disable-next-line node/no-extraneous-import
+import globalCacheDir from 'global-cache-dir'
 import pathExists from 'path-exists'
 import { each } from 'test-each'
-
-import globalCacheDir from '../src/main.js'
 
 const getName = function () {
   return String(Math.random()).replace('.', '')
