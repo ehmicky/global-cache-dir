@@ -4,7 +4,6 @@ import getCacheDir from 'cachedir'
 import pathExists from 'path-exists'
 
 // Get the global cache directory
-// eslint-disable-next-line import/no-default-export
 export default async function globalCacheDir(name) {
   const cacheDir = getCacheDir(name)
   await createCacheDir(cacheDir)
