@@ -50,7 +50,7 @@
     "path-exists": "^4.0.0"
   },
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^1.0.35",
+    "@ehmicky/dev-tasks": "^1.0.36",
     "test-each": "^3.0.1"
   },
   "engines": {
