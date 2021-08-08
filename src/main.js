@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 
 import getCacheDir from 'cachedir'
-import pathExists from 'path-exists'
+import { pathExists } from 'path-exists'
 
 // Get the global cache directory
 export default async function globalCacheDir(name) {

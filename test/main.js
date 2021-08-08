@@ -1,6 +1,6 @@
 import test from 'ava'
 import globalCacheDir from 'global-cache-dir'
-import pathExists from 'path-exists'
+import { pathExists } from 'path-exists'
 import { each } from 'test-each'
 
 const getName = function () {
