@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "cachedir": "^2.3.0",
-    "path-exists": "^4.0.0"
+    "path-exists": "^5.0.0"
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.43",
