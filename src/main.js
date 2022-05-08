@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs'
+import { mkdir } from 'fs/promises'
 
 import getCacheDir from 'cachedir'
 import { pathExists } from 'path-exists'
@@ -15,5 +15,5 @@ const createCacheDir = async function (cacheDir) {
     return
   }
 
-  await fs.mkdir(cacheDir, { recursive: true })
+  await mkdir(cacheDir, { recursive: true })
 }
