@@ -12,9 +12,6 @@ The cache directory location is OS-specific.
 
 # Example
 
-<!-- Remove 'eslint-skip' once estree supports top-level await -->
-<!-- eslint-skip -->
-
 ```js
 import globalCacheDir from 'global-cache-dir'
 
