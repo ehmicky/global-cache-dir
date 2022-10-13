@@ -34,7 +34,7 @@
     "android",
     "nodejs"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "homepage": "https://www.github.com/ehmicky/global-cache-dir",
   "repository": "ehmicky/global-cache-dir",
   "bugs": {
