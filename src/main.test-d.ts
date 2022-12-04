@@ -1,7 +1,9 @@
-import { expectError, expectType } from 'tsd'
+import { expectType } from 'tsd'
 
 import globalCacheDir from 'global-cache-dir'
 
 expectType<string>(await globalCacheDir('name'))
-expectError(await globalCacheDir())
-expectError(await globalCacheDir('name', true))
+// @ts-expect-error
+await globalCacheDir()
+// @ts-expect-error
+await globalCacheDir('name', true)
