@@ -3,9 +3,7 @@ import globalCacheDir from 'global-cache-dir'
 import { pathExists } from 'path-exists'
 import { each } from 'test-each'
 
-const getName = function () {
-  return String(Math.random()).replace('.', '')
-}
+const getName = () => String(Math.random()).replace('.', '')
 
 test('should return the cache directory', async (t) => {
   const name = getName()
