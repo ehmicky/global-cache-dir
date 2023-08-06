@@ -42,7 +42,10 @@
   ],
   "license": "MIT",
   "homepage": "https://www.github.com/ehmicky/global-cache-dir",
-  "repository": "ehmicky/global-cache-dir",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehmicky/global-cache-dir.git"
+  },
   "bugs": {
     "url": "https://github.com/ehmicky/global-cache-dir/issues"
   },
